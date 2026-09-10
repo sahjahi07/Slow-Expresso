@@ -1,5 +1,23 @@
-nav
+body
 {
+    background-color: rgb(235, 220, 200);
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgba(250, 243, 235, 0.596);
+    border-radius: 15px;
+
+}
+
+.navi {
+    color: black;
+    text-decoration: none
+}
+
+nav :hover 
+{
+    color: rgb(158, 116, 82);
 }
