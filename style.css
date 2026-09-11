@@ -72,9 +72,8 @@ h2 {
   height: 150px;
   object-fit: contain;
   display: block;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
-
 
 .cold-drink {
     min-height: 70px;
@@ -112,6 +111,25 @@ h2 {
 
 .knopf1:hover {
   background-color: rgb(120, 80, 50);
+}
+
+.drink-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 110px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.preis {
+  font-size: 17px;
+  font-weight: normal;
+  color: #6b3f28;
 }
 
 
