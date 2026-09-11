@@ -2,8 +2,10 @@
     --margin: 30px;
     --boxmargin: 20px;
     --radius: 15px;
-    --boxwidth: 500px;
-    --boxheigt: 400px;
+    --boxwidth: 360px;
+    --boxheigt: 360px;
+    --labelheight: 100px;
+    --labelwidth: 360px;
 }
 
 @font-face {
@@ -14,6 +16,8 @@
 body {
     background-color: rgb(235, 220, 200);
     font-family: LobsterTwo-Bold;
+        max-width: 1200px;
+    min-height: 100vh;
 }
 
 
@@ -29,21 +33,29 @@ header {
 
 }
 
+strong
+{
+    font-size: 50px;
+    line-height: 1px;
+}
+
 .logo {
-    height: 500px;
+    height: 400px;
     margin: var(--margin);
 }
 
-h1,
-h2 {
-    color: rgb(250, 243, 235);
-
-}
 
 h1 {
     font-size: 150px;
+    color: rgb(250, 243, 235);
+    line-height: 130px;
 }
 
+h3
+{
+    background-color: rgb(250, 243, 235);
+    border-radius: var(--radius);
+}
 
 .haupt {
     display: flex;
@@ -79,12 +91,27 @@ h1 {
 }
 
 .bestfood {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
 }
 
+.label
+{
+    background-color: #fff2e9;
+    border-radius: var(--radius);
+    width: var(--labelwidth);
+    height: var(--labelheigt);
 
+
+    text-decoration: none;
+    color: rgb(176, 142, 106);
+    margin: var(--boxmargin);
+    margin-top: 5px;
+    font-size: 50px;
+    text-align: center;
+}
 
 .food {
     background-color: rgb(176, 142, 106);
@@ -100,6 +127,13 @@ h1 {
     text-align: center;
 }
 
+.food img
+{
+    width: 300 px;
+    height: 300px;
+    margin: 50px;
+}
+
 .food:hover {
     background-color: rgb(84, 56, 36);
     color: rgb(176, 142, 106);
@@ -107,37 +141,6 @@ h1 {
 
 
 
-
-.rabat {
-    text-align: center;
-    font-size: 50px;
-    margin: 50px;
-}
-
-.rabatte {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.rabatanzeige {
-    background-color: rgb(84, 56, 36);
-    border-radius: var(--radius);
-    width: var(--boxwidth);
-    height: var(--boxheigt);
-
-
-    text-decoration: none;
-    color: rgb(176, 142, 106);
-    margin: var(--boxmargin);
-    font-size: 50px;
-    text-align: center;
-}
-
-.rabatanzeige:hover {
-    background-color: rgb(176, 142, 106);
-    color: rgb(84, 56, 36);
-}
 
 
 footer {
@@ -162,8 +165,14 @@ td {
 
 th,
 td a {
-    color: black;
+    color: rgb(250, 243, 235);
     text-align: center;
     font-size: 50px;
     text-decoration: none;
+    font-family: LobsterTwo-Regular;
+}
+
+td a
+{
+    font-size: 40px;
 }
