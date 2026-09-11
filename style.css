@@ -2,7 +2,7 @@
     --margin: 30px;
     --boxmargin: 20px;
     --radius: 15px;
-    --boxwidth: 150px;
+    --boxwidth: 0px;
 }
 
 
@@ -44,6 +44,9 @@ h2 {
     margin: 0 auto;
 }
 
+.menue
+
+
 
 .drink {
     min-height: 200px;
@@ -81,7 +84,7 @@ h2 {
     align-items: center;
 
     border-radius: 15px;
-    background-color: rgb(84, 56, 36);
+    background-color: #aca9a694;
     color: white;
     font-size: 18px;
     font-weight: bold;
