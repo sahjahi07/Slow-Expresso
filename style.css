@@ -1,9 +1,22 @@
+:root {
+    --margin: 30px;
+    --boxmargin: 20px;
+    --radius: 15px;
+    --boxwidth: 150px;
+}
+
+
 body {
     margin: 0;
     padding: 30px;
     background-color: burlywood;
-    font-family: Arial, sans-serif;
+    font-family: LobsterTwo-Bold;
     color: #3b2113;
+}
+
+@font-face {
+    font-family: "LobsterTwo-Bold";
+    src: url(assets/schrift/Lobster_Two/LobsterTwo-Bold.ttf);
 }
 
 
@@ -68,12 +81,29 @@ h2 {
     align-items: center;
 
     border-radius: 15px;
-    background-color: #aca9a694;
+    background-color: rgb(84, 56, 36);
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
 
+.knopf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.knopf1 {
+    background-color: rgb(84, 56, 36);
+    border-radius: var(--radius);
+    width: var(--boxwidth);
+    text-decoration: none;
+    color: rgb(176, 142, 106);
+    margin: var(--boxmargin);
+    font-size: 30px;
+    text-align: center;
+}
 
 
 
