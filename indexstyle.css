@@ -2,8 +2,8 @@
     --margin: 30px;
     --boxmargin: 20px;
     --radius: 15px;
-    --boxwidth: 600px;
-    --boxheigt: 300px;
+    --boxwidth: 500px;
+    --boxheigt: 400px;
 }
 
 @font-face {
@@ -84,6 +84,8 @@ h1 {
     justify-content: space-around;
 }
 
+
+
 .food {
     background-color: rgb(176, 142, 106);
     border-radius: var(--radius);
@@ -102,6 +104,7 @@ h1 {
     background-color: rgb(84, 56, 36);
     color: rgb(176, 142, 106);
 }
+
 
 
 
