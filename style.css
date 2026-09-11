@@ -24,6 +24,7 @@ h1 {
     margin-bottom: 30px;
     font-style: italic;
     text-align: center;
+
     font-size: 42px;
 }
 
@@ -91,23 +92,27 @@ h2 {
 }
 
 .knopf {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
 }
 
 .knopf1 {
-    background-color: rgb(84, 56, 36);
-    border-radius: var(--radius);
-    width: var(--boxwidth);
-    text-decoration: none;
-    color: rgb(176, 142, 106);
-    margin: var(--boxmargin);
-    font-size: 30px;
-    text-align: center;
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: rgb(84, 56, 36);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: rgb(230, 200, 160);
+  font-size: 30px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
+.knopf1:hover {
+  background-color: rgb(120, 80, 50);
+}
 
 
 @media (max-width: 600px) {
