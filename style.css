@@ -74,7 +74,10 @@ h2 {
   color: white;
 }
 
-.drink:hover .name,
+.drink:hover .name{
+  color: white;
+}
+
 .drink:hover .preis {
   color: white;
 }
