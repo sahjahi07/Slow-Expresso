@@ -1,23 +1,166 @@
-body
-{
+:root {
+    --margin: 30px;
+    --boxmargin: 20px;
+    --radius: 15px;
+    --boxwidth: 600px;
+    --boxheigt: 300px;
+}
+
+@font-face {
+    font-family: "LobsterTwo-Bold";
+    src: url(assets/schrift/Lobster_Two/LobsterTwo-Bold.ttf);
+}
+
+body {
     background-color: rgb(235, 220, 200);
+    font-family: LobsterTwo-Bold;
 }
 
-nav {
+
+
+header {
+    margin: var(--margin);
+    margin-top: 20px;
+    border-radius: var(--radius);
+    background-color: rgba(187, 161, 131, 0.596);
+
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    background-color: rgba(250, 243, 235, 0.596);
-    border-radius: 15px;
+    flex-direction: row;
 
 }
 
-.navi {
+.logo {
+    height: 500px;
+    margin: var(--margin);
+}
+
+h1,
+h2 {
+    color: rgb(250, 243, 235);
+
+}
+
+h1 {
+    font-size: 150px;
+}
+
+
+.haupt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hauptknopf {
+    background-color: rgb(84, 56, 36);
+    border-radius: var(--radius);
+    width: var(--boxwidth);
+    height: var(--boxheigt);
+
+
+    text-decoration: none;
+    color: rgb(176, 142, 106);
+    margin: var(--boxmargin);
+    font-size: 50px;
+    text-align: center;
+}
+
+.hauptknopf:hover {
+    background-color: rgb(176, 142, 106);
+    color: rgb(84, 56, 36);
+}
+
+
+
+.best-food {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.bestfood {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.food {
+    background-color: rgb(176, 142, 106);
+    border-radius: var(--radius);
+    width: var(--boxwidth);
+    height: var(--boxheigt);
+
+
+    text-decoration: none;
+    color: rgb(84, 56, 36);
+    margin: var(--boxmargin);
+    font-size: 50px;
+    text-align: center;
+}
+
+.food:hover {
+    background-color: rgb(84, 56, 36);
+    color: rgb(176, 142, 106);
+}
+
+
+
+.rabat {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.rabatte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rabatanzeige {
+    background-color: rgb(84, 56, 36);
+    border-radius: var(--radius);
+    width: var(--boxwidth);
+    height: var(--boxheigt);
+
+
+    text-decoration: none;
+    color: rgb(176, 142, 106);
+    margin: var(--boxmargin);
+    font-size: 50px;
+    text-align: center;
+}
+
+.rabatanzeige:hover {
+    background-color: rgb(176, 142, 106);
+    color: rgb(84, 56, 36);
+}
+
+
+footer {
+    background-color: rgb(187, 161, 131, 0.596);
+    margin: var(--margin);
+    border-radius: var(--radius);
+
+}
+
+
+
+table {
+    margin: var(--margin);
+}
+
+th,
+td {
+    text-align: center;
+    padding: 30px;
+
+}
+
+th,
+td a {
     color: black;
-    text-decoration: none
-}
-
-nav :hover 
-{
-    color: rgb(158, 116, 82);
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
 }
