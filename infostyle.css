@@ -1,6 +1,6 @@
 :root {
-    --margin-main: 20px;
     --margin: 40px;
+    --margin-main: 20px;
     --boxmargin: 20px;
     --radius: 15px;
     --boxwidth: 360px;
@@ -10,6 +10,7 @@
     --lightbrown: rgb(176, 142, 106);
     --darkbrown: rgb(84, 56, 36);
     --background-color: rgba(187, 161, 131, 0.596);
+    --main-text-color: rgb(250, 243, 235)
 }
 
 @font-face {
@@ -20,54 +21,76 @@
 body {
     background-color: rgb(224, 201, 170);
     font-family: LobsterTwo-Bold;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 
 
 header {
     margin: var(--margin-main);
     margin-top: 20px;
     border-radius: var(--radius);
-    background-color: var(--background-color);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    background-color: rgba(187, 161, 131, 0.596);
 }
-
-strong
-{
-    font-size: 50px;
-    line-height: 1px;
-}
-
-.logo {
-    height: 400px;
-    margin: var(--margin);
-}
-
 
 h1 {
-    font-size: 150px;
-    color: rgb(250, 243, 235);
-    line-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--main-text-color);
+    font-size: 50px;
+
 }
 
-h3
-{
-    background-color: rgb(250, 242, 235);
+.idee {
+    background-color: var(--darkbrown);
     border-radius: var(--radius);
+    margin: var(--margin);
+    padding-bottom: 10px;
+    color: var(--lightbrown);
 }
 
-.haupt {
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+h3 {
+    margin: 40px;
+    font-size: 30px;
+}
+
+
+.person1 {
+    background-color: var(--lightbrown);
+    border-radius: var(--radius);
+    margin: var(--margin);
+    padding-bottom: 10px;
+    color: var(--darkbrown);
+}
+
+.person2 {
+    background-color: var(--lightbrown);
+    border-radius: var(--radius);
+    margin: var(--margin);
+    padding-bottom: 10px;
+    color: var(--darkbrown);
+}
+
+.mascot {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.hauptknopf {
+.mascot-item {
+
     background-color: var(--darkbrown);
     border-radius: var(--radius);
     width: var(--boxwidth);
@@ -76,34 +99,11 @@ h3
 
     text-decoration: none;
     color: var(--lightbrown);
-    margin: var(--boxmargin);
     font-size: 50px;
     text-align: center;
 }
 
-.hauptknopf:hover {
-    background-color: var(--lightbrown);
-    color: var(--darkbrown);
-}
-
-
-
-.best-food {
-    text-align: center;
-    font-size: 50px;
-    margin: var(--margin);
-    padding: 20px;
-}
-
-.bestfood {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-content: center;
-}
-
-.label
-{
+.label {
     background-color: #fff2e9;
     border-radius: var(--radius);
     width: var(--labelwidth);
@@ -112,48 +112,37 @@ h3
 
     text-decoration: none;
     color: var(--lightbrown);
-    margin: var(--boxmargin);
     margin-top: 5px;
     font-size: 50px;
     text-align: center;
 }
 
-.food {
+
+.startseite
+{
+    display: flex;
+    justify-content: center;
     background-color: var(--lightbrown);
+}
+
+.startseite {
+    display: flex;
+    justify-content: center;
     border-radius: var(--radius);
-    width: var(--boxwidth);
-    height: var(--boxheigt);
+    width: var(--labelwidth);
+    height: var(--labelheigt);
 
-
-    text-decoration: none;
-    color: var(--darkbrown);
-    margin: var(--boxmargin);
-    font-size: 50px;
     text-align: center;
 }
-
-.food img
-{
-    width: 300 px;
-    height: 300px;
-    margin: 50px;
-}
-
-.food:hover {
-    background-color: var(--darkbrown);
-    color: var(--lightbrown);
-}
-
-
 
 
 
 footer {
     background-color: rgb(187, 161, 131, 0.596);
-    margin: var(--margin-main);
     border-radius: var(--radius);
 
 }
+
 table {
     margin: var(--margin);
 }
@@ -174,7 +163,6 @@ td a {
     font-family: LobsterTwo-Regular;
 }
 
-td a
-{
+td a {
     font-size: 40px;
 }
