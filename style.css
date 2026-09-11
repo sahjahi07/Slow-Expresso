@@ -46,9 +46,6 @@ h2 {
 }
 
 .menue
-
-
-
 .drink {
     min-height: 200px;
     padding: 15px;
@@ -66,6 +63,24 @@ h2 {
     font-weight: bold;
 }
 
+.drink {
+  background-color: #f8f8f8;
+  color: rgb(87, 49, 49);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.drink:hover {
+  background-color: #543824;
+  color: white;
+}
+
+.drink:hover .name{
+  color: white;
+}
+
+.drink:hover .preis {
+  color: white;
+}
 
 .images {
   width: 140px;
