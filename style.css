@@ -106,28 +106,34 @@ h2 {
 }
 
 .knopf {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding-bottom: 30px;
 }
 
 .knopf1 {
-  display: inline-block;
+  display: flex;
+  width: 50%;
   padding: 15px 35px;
+  margin: 0;
+
   background-color: rgb(84, 56, 36);
-  border-radius: var(--radius);
-  text-decoration: none;
+  border-radius: 15px;
+
   color: rgb(230, 200, 160);
   font-size: 30px;
+  text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s ease;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .knopf1:hover {
-  background-color: rgb(120, 80, 50);
+  background-color: rgb(60, 38, 24);
+  color: white;
 }
-
 .drink-info {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,30 @@ h2 {
   font-size: 17px;
   font-weight: normal;
   color: #6b3f28;
+}
+.drink-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.drink-link .drink {
+  width: 100%;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.drink-link:hover .drink {
+  background-color: #543824;
+  color: white;
+  transform: scale(1.03);
+}
+
+.drink-link:hover .name,
+.drink-link:hover .preis {
+  color: white;
 }
 
 

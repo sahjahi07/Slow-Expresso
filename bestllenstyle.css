@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: burlywood;
+    font-family: LobsterTwo-Bold;
+    color: #3b2113;
+}
+
+@font-face {
+    font-family: "LobsterTwo-Bold";
+    src: url(assets/schrift/Lobster_Two/LobsterTwo-Bold.ttf);
+}
