@@ -1,0 +1,25 @@
+ul {
+    list-style-type: none;
+    position: fixed;
+    display: flex;
+    background-color: rgb(250, 243, 235);
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    
+    color: var(--darkbrown);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}

@@ -20,7 +20,6 @@
 body {
     background-color: rgb(224, 201, 170);
     font-family: LobsterTwo-Bold;
-    min-height: 100vh;
 }
 
 
@@ -37,8 +36,7 @@ header {
 
 }
 
-strong
-{
+strong {
     font-size: 50px;
     line-height: 1px;
 }
@@ -55,8 +53,7 @@ h1 {
     line-height: 130px;
 }
 
-h3
-{
+h3 {
     background-color: rgb(250, 242, 235);
     border-radius: var(--radius);
 }
@@ -102,8 +99,7 @@ h3
     align-content: center;
 }
 
-.label
-{
+.label {
     background-color: #fff2e9;
     border-radius: var(--radius);
     width: var(--labelwidth);
@@ -132,8 +128,7 @@ h3
     text-align: center;
 }
 
-.food img
-{
+.food img {
     width: 300 px;
     height: 300px;
     margin: 50px;
@@ -154,6 +149,7 @@ footer {
     border-radius: var(--radius);
 
 }
+
 table {
     margin: var(--margin);
 }
@@ -174,7 +170,7 @@ td a {
     font-family: LobsterTwo-Regular;
 }
 
-td a
-{
+td a {
     font-size: 40px;
 }
+
