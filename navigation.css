@@ -1,11 +1,13 @@
 ul {
     list-style-type: none;
     position: fixed;
-    display: flex;
     background-color: rgb(250, 243, 235);
     width: 100%;
     height: 50px;
     margin-top: 0px;
+
+    display: flex;
+    align-items: center;
 }
 
 ul li {
@@ -18,8 +20,10 @@ ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
+
 }
 
 ul li a:hover {
-    background-color: #111111;
+    background-color: rgb(189, 175, 159);
 }
