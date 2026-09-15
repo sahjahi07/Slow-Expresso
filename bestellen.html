@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="bestllenstyle.css">
 </head>
 <body>
-    <h1>Deine Bestellung</h1>
+
+    <h1>Bestellen</h1>
+
+<div class="bestellung">
     
 <label for="name">Name*</label>
 <input type="text" name="name" id="name-field" required>
@@ -21,8 +24,28 @@
 <label for="e-mail">E-mail</label>
 <input type="text" name="e-mail" id="e-mail">
 <p>
-<h3>Deine Adresse</h3
-    >
+<h2>Deine Adresse</h2>
+<label for="Strasse">Strasse</label>
+<input type="text" name="Strasse" id="Strasse">
+<p>
+<label for="Ort">PLZ, Ort</label>
+<input type="text" name="PLZ, Ort" id="PLZ, Ort">
+<p>
+<label for="Haus">Haus nr.</label>
+<input type="text" name="Haus nr." id="Haus nr.t">
+<p>
+
+<h2>Bestellung</h2>
+<label for="getränk">WähleGe</label>
+
+<select id="land" name="land">
+  <option value="">Bitte auswählen</option>
+  <option value="ch">Schweiz</option>
+  <option value="de">Deutschland</option>
+  <option value="at">Österreich</option>
+</select>
+</div>
+
 
 
 </body>

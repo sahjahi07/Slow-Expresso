@@ -10,3 +10,25 @@ body {
     font-family: "LobsterTwo-Bold";
     src: url(assets/schrift/Lobster_Two/LobsterTwo-Bold.ttf);
 }
+
+.bestellung{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+select {
+  width: 160px;        /* vorher z. B. 250px */
+  padding: 7px 10px;   /* weniger Innenabstand */
+  border: 2px solid #555;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;     /* kleinere Schrift */
+  text-align: left;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #1976d2;
+  outline: none;
+}
