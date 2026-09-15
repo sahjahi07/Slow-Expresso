@@ -17,10 +17,11 @@
     src: url(assets/schrift/Lobster_Two/LobsterTwo-Bold.ttf);
 }
 
+
+
 body {
     background-color: rgb(224, 201, 170);
     font-family: LobsterTwo-Bold;
-    min-height: 100vh;
 }
 
 
@@ -31,21 +32,22 @@ header {
     border-radius: var(--radius);
     background-color: var(--background-color);
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 200px;
 
+    grid-template-areas:
+        "logo h1"
+        "slogan slogan";
 }
 
-strong
-{
-    font-size: 50px;
-    line-height: 1px;
-}
 
 .logo {
     height: 400px;
     margin: var(--margin);
+    display: flex;
+    justify-content: left;
+    grid-area: logo;
 }
 
 
@@ -53,39 +55,21 @@ h1 {
     font-size: 150px;
     color: rgb(250, 243, 235);
     line-height: 130px;
+    margin: 100px;
+    grid-area: h1;
 }
 
-h3
-{
+h2 {
+    font-size: 50px;
+    color: rgb(250, 243, 235);
+    text-align: center;
+    grid-area: slogan;
+}
+
+h3 {
     background-color: rgb(250, 242, 235);
     border-radius: var(--radius);
 }
-
-.haupt {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.hauptknopf {
-    background-color: var(--darkbrown);
-    border-radius: var(--radius);
-    width: var(--boxwidth);
-    height: var(--boxheigt);
-
-
-    text-decoration: none;
-    color: var(--lightbrown);
-    margin: var(--boxmargin);
-    font-size: 50px;
-    text-align: center;
-}
-
-.hauptknopf:hover {
-    background-color: var(--lightbrown);
-    color: var(--darkbrown);
-}
-
 
 
 .best-food {
@@ -97,13 +81,71 @@ h3
 
 .bestfood {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 400px 100px 400px 100px;
     align-content: center;
+    grid-template-areas: 
+    "food1 food2 food3"
+    "label1 label2 label3"
+    "food4 food5 food6"
+    "label4 label5 label6";
+
+    margin: var(--margin);
 }
 
-.label
-{
+#food1 {
+    grid-area: food1;
+}
+
+#food2 {
+    grid-area: food2;
+}
+
+#food3 {
+    grid-area: food3;
+}
+
+#food4 {
+    grid-area: food4;
+}
+
+#food5 {
+    grid-area: food5;
+}
+
+#food6 {
+    grid-area: food6;
+}
+
+#label1 {
+    grid-area: label1;
+}
+
+#label2 {
+    grid-area: label2;
+}
+
+#label3 {
+    grid-area: label3;
+}
+
+#label4 {
+    grid-area: label4;
+}
+
+#label5 {
+    grid-area: label5;
+}
+
+#label6 {
+    grid-area: label6;
+}
+
+
+
+
+
+.label {
     background-color: #fff2e9;
     border-radius: var(--radius);
     width: var(--labelwidth);
@@ -132,8 +174,7 @@ h3
     text-align: center;
 }
 
-.food img
-{
+.food img {
     width: 300 px;
     height: 300px;
     margin: 50px;
@@ -154,6 +195,7 @@ footer {
     border-radius: var(--radius);
 
 }
+
 table {
     margin: var(--margin);
 }
@@ -174,7 +216,6 @@ td a {
     font-family: LobsterTwo-Regular;
 }
 
-td a
-{
+td a {
     font-size: 40px;
 }
