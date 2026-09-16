@@ -67,14 +67,18 @@ ul {
 
 .person1 {
     background-color: var(--lightbrown);
+    height: 200px;
     border-radius: var(--radius);
     margin: var(--margin);
     padding-bottom: 10px;
     color: var(--darkbrown);
 }
 
+
+
 .person2 {
     background-color: var(--lightbrown);
+    height: 200px;
     border-radius: var(--radius);
     margin: var(--margin);
     padding-bottom: 10px;

@@ -13,7 +13,7 @@
         align-items: center;
 
         color: var(--main-text-color);
-        font-size: 50px;
+        font-size: 30px;
 
     }
 
@@ -28,12 +28,21 @@
     h2 {
         display: flex;
         justify-content: center;
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    li {
-        font-size: 20px;
-    }
+ .person1 li
+ {
+    font-size: 20px;
+ }
+
+
+ .person2 li
+ {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+ }
 
     
     

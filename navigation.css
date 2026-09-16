@@ -1,10 +1,9 @@
-ul {
+.navilink {
     list-style-type: none;
-    position: fixed;
     background-color: rgb(250, 243, 235);
     width: 100%;
     height: 60px;
-    margin-top: 0;
+    margin: 0;
 
     display: flex;
     align-items: center;
@@ -36,7 +35,7 @@ ul li a:hover {
     ul li a {
     font-size: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 }
