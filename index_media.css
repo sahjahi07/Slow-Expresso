@@ -41,22 +41,26 @@
         display: flex;
         justify-content: right;
         align-items: center;
- 
+
     }
 
     h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
 
         font-size: 15px;
         margin-top: 40px;
         margin-left: 20px;
     }
 
-    #food4, #food5, #food6, #label4, #label5, #label6
-    {
+    #food4,
+    #food5,
+    #food6,
+    #label4,
+    #label5,
+    #label6 {
         display: none;
     }
 
@@ -65,7 +69,7 @@
         display: grid;
         text-align: center;
         grid-template-columns: 200px;
-
+        gap: 0;
 
         grid-template-areas:
             "food1"

@@ -1,0 +1,34 @@
+footer {
+    background-color: rgb(187, 161, 131, 0.596);
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.footone,
+.foottwo {
+    color: rgb(250, 243, 235);
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.footone
+{
+    text-decoration: underline;
+}
+
+.foottwo {
+    font-size: 40px;
+    font-family: LobsterTwo-Regular;
+    padding-bottom: 40px;
+}
+
+.foottwo:hover
+{
+    background-color: var(--background-color);
+}
