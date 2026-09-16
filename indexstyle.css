@@ -84,11 +84,11 @@ h3 {
     grid-template-columns: 360px 360px 360px;
     grid-template-rows: 400px 100px 400px 100px;
     align-content: center;
-    grid-template-areas: 
-    "food1 food2 food3"
-    "label1 label2 label3"
-    "food4 food5 food6"
-    "label4 label5 label6";
+    grid-template-areas:
+        "food1 food2 food3"
+        "label1 label2 label3"
+        "food4 food5 food6"
+        "label4 label5 label6";
 
     margin: var(--margin);
 }
@@ -172,6 +172,9 @@ h3 {
     margin: var(--boxmargin);
     font-size: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
 }
 
 .food img {
@@ -191,31 +194,25 @@ h3 {
 
 footer {
     background-color: rgb(187, 161, 131, 0.596);
-    margin: var(--margin-main);
-    border-radius: var(--radius);
 
 }
 
-table {
-    margin: var(--margin);
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
 }
 
-th,
-td {
-    text-align: center;
-    padding: 30px;
-
-}
-
-th,
-td a {
+.footone,
+.foottwo {
     color: rgb(250, 243, 235);
     text-align: center;
     font-size: 50px;
     text-decoration: none;
-    font-family: LobsterTwo-Regular;
 }
 
-td a {
+.foottwo {
     font-size: 40px;
+    font-family: LobsterTwo-Regular;
+    padding-bottom: 40px;
 }

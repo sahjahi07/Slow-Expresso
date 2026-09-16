@@ -1,18 +1,71 @@
-
-
-
+:root {
+    --fontsize: 20px;
+    --topmargin: 10px;
+}
 
 @media screen and (max-width: 600px) {
 
-    .logo {
-        height: 300px;
+
+    header {
+        margin: 10px;
+        margin-top: 20px;
+        border-radius: var(--radius);
+        background-color: var(--background-color);
+
+        display: grid;
+        grid-template-columns: 75px 80px;
+        grid-template-rows: 100px 80px;
+
+        grid-template-areas:
+            "logo h1"
+            "slogan slogan";
     }
+
+    .logo {
+        height: 80px;
+        margin: var(--topmargin);
+        margin-top: 50px;
+        grid-area: logo;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        color: rgb(250, 243, 235);
+        line-height: 25px;
+        grid-area: h1;
+
+        display: flex;
+        justify-content: right;
+        align-items: center;
+ 
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    #food4, #food5, #food6, #label4, #label5, #label6
+    {
+        display: none;
+    }
+
 
     .bestfood {
         display: grid;
         text-align: center;
-        grid-template-columns: 360px;
-    
+        grid-template-columns: 200px;
+
 
         grid-template-areas:
             "food1"
@@ -30,18 +83,36 @@
         ;
     }
 
-    .label
-    {
-        width: 300px;
+    .best-food {
+        font-size: var(--fontsize);
+        padding: 10px;
+        margin-top: var(--topmargin);
+    }
+
+    .label {
+        width: 150px;
+        padding: 10px;
+        font-size: var(--fontsize);
     }
 
     .food {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+        margin-top: var(--topmargin);
+
+        display: flex;
+        justify-content: center;
     }
 
-    ul {
-        display: flex;
-        justify-content: space-evenly;
+    .footone,
+    .foottwo {
+        color: rgb(250, 243, 235);
+        text-align: center;
+        font-size: var(--fontsize);
+        text-decoration: none;
+    }
+
+    .foottwo {
+        font-size: 20px;
     }
 }
