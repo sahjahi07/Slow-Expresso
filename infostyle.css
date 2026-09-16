@@ -21,8 +21,6 @@
 body {
     background-color: rgb(224, 201, 170);
     font-family: LobsterTwo-Bold;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -60,7 +58,7 @@ h2 {
     padding-top: 10px;
 }
 
-h3 {
+h3, ul {
     margin: 40px;
     font-size: 30px;
 }
@@ -84,10 +82,27 @@ h3 {
 
 .mascot {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
+
+#kaffin {
+    grid-area: kaffin;
+}
+
+#kaffintext {
+    grid-area: kaffintext;
+}
+
+#presso {
+    grid-area: presso;
+}
+
+#pressotext {
+    grid-area: pressotext;
+}
+
 
 .mascot-item {
 
@@ -95,31 +110,29 @@ h3 {
     border-radius: var(--radius);
     width: var(--boxwidth);
     height: var(--boxheigt);
-
-
-    text-decoration: none;
-    color: var(--lightbrown);
-    font-size: 50px;
-    text-align: center;
+    margin-bottom: var(--margin);
 }
 
-.label {
-    background-color: #fff2e9;
+
+.beschreibung {
+    background-color: var(--lightbrown);
+    color: var(--darkbrown);
+    width: 700px;
+    height: 300px;
     border-radius: var(--radius);
-    width: var(--labelwidth);
-    height: var(--labelheigt);
+    margin: var(--margin);
 
+    font-size: 30px;
+    padding-left: 20px;
+}
 
-    text-decoration: none;
-    color: var(--lightbrown);
-    margin-top: 5px;
-    font-size: 50px;
-    text-align: center;
+.beschreibung h3 {
+    text-decoration: underline;
+    font-size: 40px;
 }
 
 
-.startseite
-{
+.startseite {
     display: flex;
     justify-content: center;
     background-color: var(--lightbrown);
@@ -166,3 +179,4 @@ td a {
 td a {
     font-size: 40px;
 }
+
