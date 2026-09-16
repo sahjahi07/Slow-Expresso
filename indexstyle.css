@@ -9,7 +9,7 @@
     --labelwidth: 360px;
     --lightbrown: rgb(176, 142, 106);
     --darkbrown: rgb(84, 56, 36);
-    --background-color: rgba(187, 161, 131, 0.596);
+    --background-color: rgba(187, 161, 131);
 }
 
 @font-face {
@@ -30,7 +30,7 @@ header {
     margin: var(--margin-main);
     margin-top: 20px;
     border-radius: var(--radius);
-    background-color: var(--background-color);
+        background-image: url(assets/images/berg2.jpeg);
 
     display: grid;
     grid-template-columns: 500px 500px;
@@ -199,7 +199,10 @@ h3 {
     color: var(--lightbrown);
 }
 
-
+.map
+{display: flex;
+justify-content: center;
+margin-bottom: 20px;}
 
 
 

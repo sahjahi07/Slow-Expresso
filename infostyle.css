@@ -9,7 +9,7 @@
     --labelwidth: 360px;
     --lightbrown: rgb(176, 142, 106);
     --darkbrown: rgb(84, 56, 36);
-    --background-color: rgba(187, 161, 131, 0.596);
+    --background-color: rgba(187, 161, 131);
     --main-text-color: rgb(250, 243, 235)
 }
 
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: rgb(224, 201, 170);
+    background-image: url(assets/images/metro.jpeg);
     font-family: LobsterTwo-Bold;
 }
 
@@ -28,7 +28,7 @@ header {
     margin: var(--margin-main);
     margin-top: 20px;
     border-radius: var(--radius);
-    background-color: rgba(187, 161, 131, 0.596);
+    background-color: rgba(187, 161, 131);
 }
 
 h1 {
@@ -136,11 +136,31 @@ ul {
     font-size: 40px;
 }
 
-
-.startseite {
+.start {
+    background-color: var(--darkbrown);
+    width: 50%;
     display: flex;
     justify-content: center;
+    margin: var(--boxmargin);
+    border-radius: var(--radius);
+}
+
+.startseite {
+    color: var(--lightbrown);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+.start:hover
+{
     background-color: var(--lightbrown);
+}
+
+.startseite:hover
+{
+    color: var(--darkbrown);
 }
 
 .startseite {
@@ -156,7 +176,7 @@ ul {
 
 
 footer {
-    background-color: rgb(187, 161, 131, 0.596);
+    background-color: rgb(187, 161, 131);
     border-radius: var(--radius);
 
 }

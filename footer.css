@@ -1,10 +1,8 @@
-:root{
-        --background-color: rgba(167, 140, 110, 0.596);
-}
+
 
 
 footer {
-    background-color: rgb(187, 161, 131, 0.596);
+    background-color: rgb(187, 161, 131);
 
 }
 
@@ -41,7 +39,7 @@ footer {
 .foottwo:hover,
 .datenschutz:hover,
 .impressum:hover {
-    background-color: var(--background-color);
+    background-color: rgb(155, 130, 102);
 }
 
 @media screen and (max-width: 600px) {

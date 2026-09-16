@@ -21,6 +21,11 @@ ul li a {
     padding: 20px;
 }
 
+.navilink a
+{
+    font-size: 30px;
+}
+
 ul li a:hover {
     background-color: rgb(189, 175, 159);
 }

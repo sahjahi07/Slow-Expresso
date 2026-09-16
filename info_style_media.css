@@ -4,7 +4,6 @@
         margin: var(--margin-main);
         margin-top: 20px;
         border-radius: var(--radius);
-        background-color: rgba(187, 161, 131, 0.596);
     }
 
     h1 {
@@ -63,4 +62,5 @@
         margin: var(--margin-main);
 
     }
+
 }
