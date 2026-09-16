@@ -41,7 +41,7 @@
 <form action="https://blj-ict-bz.ch/formlog/" method="post">
 
   <div class="kaffee-dropdown">
-   <p>Kaffe auswählen:</p>
+   <p>Kaffe auswählen:*</p>
 
     <div id="kaffeeAuswahl" class="kaffee-auswahl">
       <div class="kaffee-zeile">
@@ -126,10 +126,42 @@
     </div>
   </div>
 
-  <br>
+ <h2>Zahlungsmittel auswählen*</h2>
 
-  <button type="submit">Bestellung abschicken </button>
+<div class="Zahlungmöglichkeiten">
+
+  <label class="Zalhungsmittel auswahl">
+    <input type="radio" name="payment" value="twint">
+    <span class="Zahlung box">
+      <span>TWINT</span>
+    </span>
+  </label>
+
+  <label class="Zalhungsmittel auswahl">
+    <input type="radio" name="payment" value="paypal">
+    <span class="Zahlung box">
+      <span>PayPal</span>
+    </span>
+  </label>
+
+  <label class="Zalhungsmittel auswahl">
+    <input type="radio" name="payment" value="card">
+    <span class="Zahlung box">
+      <span>Kreditkarte</span>
+    </span>
+  </label>
+
+  <label class="Zalhungsmittel auswahl"></label>
+  
+</div>
+<p>
+ <button type="submit">Bestellung abschicken </button>
+
 </form>
+
+
+
+
 
 <div class="knopf">
         <a href="index.html" class="knopf1">Startseite</a>
