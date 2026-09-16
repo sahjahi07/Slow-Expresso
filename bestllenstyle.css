@@ -17,18 +17,41 @@ body {
     margin: 0 auto;
 }
 
-select {
-  width: 160px;        /* vorher z. B. 250px */
-  padding: 7px 10px;   /* weniger Innenabstand */
-  border: 2px solid #555;
+#kaffee {
+  width: 170px;
+  padding: 7px;
+  border: 1px solid #777;
   border-radius: 6px;
-  background: white;
-  font-size: 14px;     /* kleinere Schrift */
-  text-align: left;
-  cursor: pointer;
+  font-size: 13px;
+  background-color: white;
 }
 
-select:focus {
-  border-color: #1976d2;
-  outline: none;
+.knopf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.knopf1 {
+  display: flex;
+  width: 100px;
+  padding: 15px 35px;
+  margin: 0;
+
+  background-color: rgb(84, 56, 36);
+  border-radius: 15px;
+
+  color: rgb(230, 200, 160);
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.knopf1:hover {
+  background-color: rgb(60, 38, 24);
+  color: white;
 }

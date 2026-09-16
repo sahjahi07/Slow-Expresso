@@ -25,8 +25,8 @@
 <input type="text" name="e-mail" id="e-mail">
 <p>
 <h2>Deine Adresse</h2>
-<label for="Strasse">Strasse</label>
-<input type="text" name="Strasse" id="Strasse">
+<label for="Strasse">Strasse*</label>
+<input type="text" name="Strasse" id="Strasse" required>
 <p>
 <label for="Ort">PLZ, Ort</label>
 <input type="text" name="PLZ, Ort" id="PLZ, Ort">
@@ -36,15 +36,28 @@
 <p>
 
 <h2>Bestellung</h2>
-<label for="getränk">WähleGe</label>
 
-<select id="land" name="land">
-  <option value="">Bitte auswählen</option>
-  <option value="ch">Schweiz</option>
-  <option value="de">Deutschland</option>
-  <option value="at">Österreich</option>
+<label for="kaffee">Kaffee auswählen:</label>
+
+<select id="kaffee" name="kaffee[]" multiple size="1">
+  <option value="espresso">Espresso</option>
+  <option value="doppelterexpresso">Doppelter Expresso</option>
+  <option value="expressomachiato">Expresso Macchiato</option>
+  <option value="americano">Americano</option>
+  <option value="caffèCrema">Café Crema</option>
+  <option value="cappuccino">Cappuccino</option>
+  <option value="filterkaffee">Filterkaffee</option>
+  <option value="caffèlatte">Caffè Latte</option>
+  <option value="lattemacchiato">Latte Macchiato/option>
+  <option value="flatwhite">Flat White</option>
 </select>
+
+
 </div>
+
+<div class="knopf">
+        <a href="index.html" class="knopf1">Startseite</a>
+    </div>
 
 
 
