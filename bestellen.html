@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slow Expresso| Bestellung</title>
     <link rel="stylesheet" href="bestllenstyle.css">
-</head>
+
 <body>
 
     <h1>Bestellen</h1>
 
 <div class="bestellung">
+
+<form action="https://blj-ict-bz.ch/formlog/" method="post"> 
     
 <label for="name">Name*</label>
 <input type="text" name="name" id="name-field" required>
@@ -28,32 +30,106 @@
 <label for="Strasse">Strasse*</label>
 <input type="text" name="Strasse" id="Strasse" required>
 <p>
-<label for="Ort">PLZ, Ort</label>
-<input type="text" name="PLZ, Ort" id="PLZ, Ort">
+<label for="Ort">PLZ, Ort*</label>
+<input type="text" name="PLZ, Ort" id="PLZ, Ort" required>
 <p>
-<label for="Haus">Haus nr.</label>
-<input type="text" name="Haus nr." id="Haus nr.t">
+<label for="Haus">Haus nr.*</label>
+<input type="text" name="Haus nr." id="Haus nr." required>
 <p>
 
 <h2>Bestellung</h2>
+<form action="https://blj-ict-bz.ch/formlog/" method="post">
 
-<label for="kaffee">Kaffee auswählen:</label>
+  <div class="kaffee-dropdown">
+   <p>Kaffe auswählen:</p>
 
-<select id="kaffee" name="kaffee[]" multiple size="1">
-  <option value="espresso">Espresso</option>
-  <option value="doppelterexpresso">Doppelter Expresso</option>
-  <option value="expressomachiato">Expresso Macchiato</option>
-  <option value="americano">Americano</option>
-  <option value="caffèCrema">Café Crema</option>
-  <option value="cappuccino">Cappuccino</option>
-  <option value="filterkaffee">Filterkaffee</option>
-  <option value="caffèlatte">Caffè Latte</option>
-  <option value="lattemacchiato">Latte Macchiato/option>
-  <option value="flatwhite">Flat White</option>
-</select>
+    <div id="kaffeeAuswahl" class="kaffee-auswahl">
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="espresso">
+          Espresso
+        </label>
+        <input type="number" name="menge_espresso" min="0" max="10" value="0" >
+      </div>
 
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="doppelterespresso">
+          Doppelter Espresso
+        </label>
+        <input type="number" name="menge_doppelterespresso" min="0" max="10" value="0" >
+      </div>
 
-</div>
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="espressomacchiato">
+          Espresso Macchiato
+        </label>
+        <input type="number" name="menge_espressomacchiato" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="americano">
+          Americano
+        </label>
+        <input type="number" name="menge_americano" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="cafecrema">
+          Café Crema
+        </label>
+        <input type="number" name="menge_cafecrema" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="cappuccino">
+          Cappuccino
+        </label>
+        <input type="number" name="menge_cappuccino" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="filterkaffee">
+          Filterkaffee
+        </label>
+        <input type="number" name="menge_filterkaffee" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="caffelatte">
+          Caffè Latte
+        </label>
+        <input type="number" name="menge_caffelatte" min="0" max="10" value="0" >
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="lattemacchiato">
+          Latte Macchiato
+        </label>
+        <input type="number" name="menge_lattemacchiato" min="0" max="10" value="0">
+      </div>
+
+      <div class="kaffee-zeile">
+        <label>
+          <input type="checkbox" name="kaffee[]" value="flatwhite">
+          Flat White
+        </label>
+        <input type="number" name="menge_flatwhite" min="0" max="10" value="0">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <button type="submit">Bestellung abschicken </button>
+</form>
 
 <div class="knopf">
         <a href="index.html" class="knopf1">Startseite</a>

@@ -55,3 +55,48 @@ body {
   background-color: rgb(60, 38, 24);
   color: white;
 }
+
+.kaffee-zeile input[type="checkbox"] {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+
+.kaffee-zeile input[type="number"] {
+  width: 52px;
+  padding: 4px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6f4e37;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.kaffee-dropdown {
+  position: relative;
+  width: 220px;
+  margin-bottom: 20px;
+}
+.kaffee-dropdown summary {
+  width: 220px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background-color: white;
+  color: #222;
+  cursor: pointer;
+  font-size: 14px;
+  list-style: none;
+}
+
+
+
