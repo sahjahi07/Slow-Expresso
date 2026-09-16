@@ -1,16 +1,17 @@
 :root {
     --fontsize: 20px;
     --topmargin: 10px;
+    --widthpercent: 70%;
 }
 
 @media screen and (max-width: 600px) {
 
 
     header {
-        margin: 10px;
         margin-top: 20px;
         border-radius: var(--radius);
         background-color: var(--background-color);
+        width: var(--widthpercent);
 
         display: grid;
         grid-template-columns: 75px 80px;
@@ -19,6 +20,9 @@
         grid-template-areas:
             "logo h1"
             "slogan slogan";
+
+
+
     }
 
     .logo {
@@ -55,6 +59,7 @@
         margin-left: 20px;
     }
 
+
     #food4,
     #food5,
     #food6,
@@ -69,6 +74,7 @@
         display: grid;
         text-align: center;
         grid-template-columns: 200px;
+        grid-template-rows: 200px 100px;
         gap: 0;
 
         grid-template-areas:
@@ -87,10 +93,16 @@
         ;
     }
 
+
+
     .best-food {
         font-size: var(--fontsize);
         padding: 10px;
         margin-top: var(--topmargin);
+        width: 200px;
+        
+        display: flex;
+        justify-content: center;
     }
 
     .label {

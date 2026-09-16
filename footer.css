@@ -5,30 +5,63 @@ footer {
 
 footer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 400px 400px 400px;
     grid-template-rows: auto auto;
 }
 
+
+
 .footone,
-.foottwo {
+.foottwo,
+.datenschutz,
+.impressum {
     color: rgb(250, 243, 235);
     text-align: center;
     font-size: 50px;
     text-decoration: none;
 }
 
-.footone
-{
+.footone {
     text-decoration: underline;
 }
 
-.foottwo {
+.foottwo,
+.datenschutz,
+.impressum {
     font-size: 40px;
     font-family: LobsterTwo-Regular;
     padding-bottom: 40px;
 }
 
-.foottwo:hover
-{
+.foottwo:hover,
+.datenschutz:hover,
+.impressum:hover {
     background-color: var(--background-color);
+}
+
+@media screen and (max-width: 600px) {
+
+
+footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+    .footone,
+    .foottwo,
+    .datenschutz,
+    .impressum {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .datenschutz
+    {
+        margin-left: 20px;
+    }
+
 }
